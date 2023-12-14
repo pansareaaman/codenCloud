@@ -1,0 +1,91 @@
+.link{
+    padding-left: 15px;
+    text-decoration: none;
+}
+.headerBox{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headerInfo{
+    height: 300px;
+    width: 500px;
+}
+
+.headerInfo p{
+    font-size: 18px;
+    line-height: 25px;
+
+} 
+
+.headerImg{
+    max-width: 50%;
+    
+}
+
+img{
+    height: 350px;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.headerMain{
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around
+    
+    
+}
+
+
+.button-40 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .5rem; 
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem; 
+  font-weight: 600;
+  line-height: 1.25rem; 
+  padding: .4rem .8rem; 
+  text-align: center;
+  text-decoration: none solid #6B7280;
+  width: auto;
+}
+
+
+.email-input {
+    width: 350px; /* Adjust width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* Styling for when the input is focused */
+  .email-input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: dodgerblue; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on focus */
+  }
+  
+  .embut{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
