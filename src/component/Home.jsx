@@ -1,11 +1,16 @@
 import React from 'react'
 import {Header} from './Header'
-import {Footer} from './Footer'
+import {Video} from'./Video'
+import {StaticCourseCard} from'./StaticCourseCard'
+import Alumini from './Alumini'
+
 const Home = () => {
   return (
     <div>
-      <Header/>
-      <Footer/>
+      <Video/>
+      <Header/>    
+      <StaticCourseCard/>     
+      <Alumini />  
     </div>
   )
 }

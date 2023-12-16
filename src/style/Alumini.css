@@ -1,0 +1,60 @@
+.main1   {
+    width:900px;
+    margin: auto;
+}
+.main2{
+    margin-top: 20px;
+    
+}
+.main3{
+   /* background-color: white; */
+   height: 350px;
+   color: black;
+   border: 1px solid black;
+   width:100px;
+    margin-top: 50px; 
+   margin-right: 10px;
+   text-align: center;
+   /* bottom: 0;
+   left: 0;
+   right: 0; */
+   padding: 5px;
+   font-size: 15px;
+   margin-bottom: 80px;
+   border-radius: 5px;
+   gap: 50px;
+}
+.image{
+  border-top: 1.5rem;
+  height: 130px;
+  background-color: indigo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  margin-top: 30px;
+}
+.imagein{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+.name{
+    font-size: x-large;
+    font: bold;
+}
+.slick-side>div{
+    margin: 0 10px;
+}
+
+.alumni{
+    text-align: center;
+}

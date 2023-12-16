@@ -1,0 +1,39 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+import image from '../assets/headerImg.jpg'
+import '../style/StaticCourseCard.css'
+import { FaArrowAltCircleRight } from "react-icons/fa";
+
+export const StaticCourseCard = () => {
+  return (
+    <div >
+        <div class="card-group">
+        <div class="card">
+    <img src={image} class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">React-Js</h5>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a href="#" class="btn btn-primary">More Details</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src={image} class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Advance Java</h5>
+  
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a href="#" class="btn btn-primary">More Details</a>
+    </div>
+  </div>
+  <div class="card" style={{border:"none",boxShadow:"none"}}> 
+    <div class="card-body"  style={{display:"flex", alignItems:"center",justifyContent:"center",padding:"20px",}}>
+ <Link className="butt" to='/course'><FaArrowAltCircleRight size={50} /><p style={{fontSize:"30px"}}>ALL COURSES</p></Link>
+ 
+    </div>
+   
+  </div>
+  </div>
+ </div>
+    
+  )
+}

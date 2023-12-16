@@ -1,5 +1,4 @@
 import './App.css';
-import {Header} from './component/Header'
 import Html from './component/Html'
 import Css from './component/Css'
 import Js from './component/Js'
@@ -10,10 +9,14 @@ import Python from './component/Python'
 import Php from './component/Php'
 import Home from './component/Home'
 import ReactInfo from './component/ReactInfo'
+import {Footer} from './component/Footer'
 import { Route ,Routes } from 'react-router-dom';
+import { Navbar } from './component/Navbar';
+import Course from './component/Course'
 function App() {
   return (
     <div className="App">
+        {/* <Navbar/> */}
         
         <Routes>
           <Route path='/' element={<Home/>}></Route>
@@ -26,8 +29,9 @@ function App() {
           <Route path='/python' element={<Python/>}></Route>
           <Route path='/php' element={<Php/>}></Route>
           <Route path='/reactjs' element={<ReactInfo/>}></Route>
+          <Route path='/course' element={<Course/>}></Route>
         </Routes>
-        
+        <Footer/>
     </div>
   );
 }
