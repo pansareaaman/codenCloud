@@ -1,6 +1,7 @@
 import React from 'react'
 import {Header} from './Header'
 import {Video} from'./Video'
+import ContactUs from'./ContactUs'
 import {StaticCourseCard} from'./StaticCourseCard'
 import Alumini from './Alumini'
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Header/>    
       <StaticCourseCard/>     
       <Alumini />  
+      <ContactUs/>
     </div>
   )
 }

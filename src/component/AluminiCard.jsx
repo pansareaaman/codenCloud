@@ -18,7 +18,7 @@ export default function AlumniCard({ data }) {
     //console.log(data);
     return (
         <>
-
+        <div className="alumini-box">
         <h1 className="alumni">Alumni</h1>
         <div className="main1">
             <div className="main2">
@@ -37,6 +37,7 @@ export default function AlumniCard({ data }) {
                     ))}
                 </Slider>
             </div>
+        </div>
         </div>
         </>
     );

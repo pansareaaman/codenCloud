@@ -12,13 +12,12 @@ import Home from './component/Home'
 import ReactInfo from './component/ReactInfo'
 import {Footer} from './component/Footer'
 import { Route ,Routes } from 'react-router-dom';
-import { Navbar } from './component/Navbar';
+import  Navbar   from './component/Navbar';
 import Course from './component/Course'
 function App() {
   return (
     <div className="App">
-        {/* <Navbar/> */}
-        
+        {/* <Navbar/>         */}
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/html' element={<Html/>}></Route>

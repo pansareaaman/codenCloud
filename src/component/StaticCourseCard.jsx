@@ -7,7 +7,8 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 export const StaticCourseCard = () => {
   return (
-    <div >
+    <div className='stCourse'>
+      <h1 className='h1 col-md-8 mx-auto text-center'>Courses</h1>
         <div class="card-group">
         <div class="card">
     <img src={REACT} class="card-img-top" alt="..." style={{ backgroundSize:'cover'}}/>
