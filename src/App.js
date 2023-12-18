@@ -7,6 +7,7 @@ import Cpp from './component/Cpp'
 import Java from './component/Java'
 import Python from './component/Python'
 import Php from './component/Php'
+import Node from './component/Node'
 import Home from './component/Home'
 import ReactInfo from './component/ReactInfo'
 import {Footer} from './component/Footer'
@@ -30,6 +31,8 @@ function App() {
           <Route path='/php' element={<Php/>}></Route>
           <Route path='/reactjs' element={<ReactInfo/>}></Route>
           <Route path='/course' element={<Course/>}></Route>
+          <Route path='/node' element={<Node/>}></Route>
+          
         </Routes>
         <Footer/>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import image from '../assets/headerImg.jpg'
+import REACT from '../assets/react.jpg';
 import '../style/StaticCourseCard.css'
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -9,25 +10,25 @@ export const StaticCourseCard = () => {
     <div >
         <div class="card-group">
         <div class="card">
-    <img src={image} class="card-img-top" alt="..."/>
+    <img src={REACT} class="card-img-top" alt="..." style={{ backgroundSize:'cover'}}/>
     <div class="card-body">
       <h5 class="card-title">React-Js</h5>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <a href="#" class="btn btn-primary">More Details</a>
+      <Link to="/reactjs" class="btn btn-primary">More Details</Link>
     </div>
   </div>
   <div class="card">
-    <img src={image} class="card-img-top" alt="..."/>
+    <img src={image} class="card-img-top" alt="..." style={{ objectFit:'cover'}}/>
     <div class="card-body">
-      <h5 class="card-title">Advance Java</h5>
+      <h5 class="card-title">C++</h5>
   
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <a href="#" class="btn btn-primary">More Details</a>
+      <Link to="/cpp" class="btn btn-primary">More Details</Link>
     </div>
   </div>
   <div class="card" style={{border:"none",boxShadow:"none"}}> 
     <div class="card-body"  style={{display:"flex", alignItems:"center",justifyContent:"center",padding:"20px",}}>
- <Link className="butt" to='/course'><FaArrowAltCircleRight size={50} /><p style={{fontSize:"30px"}}>ALL COURSES</p></Link>
+ <a className="butt" href='/course'><FaArrowAltCircleRight size={50} /><p style={{fontSize:"30px"}}>ALL COURSES</p></a>
  
     </div>
    

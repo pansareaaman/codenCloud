@@ -63,7 +63,7 @@ const CourseCard = ({ data }) => {
       <div className='course-card-container'>
         {filteredData.map((item, index) => (
           <div className='course-card' key={index}>
-            <img src={ReactImage} alt={item.title} className='course-image' />
+            <img src={item.img} alt={item.title} className='course-image' />
             <div className='course-details'>
               <p className='course-title'>{item.title}</p>
               <p className='instructor'>
