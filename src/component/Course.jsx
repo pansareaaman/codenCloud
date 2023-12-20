@@ -1,9 +1,9 @@
 import React from 'react'
-import CourseList from './CourseList'
+import CourseCard from './CourseCard'
 const Course = () => {
   return (
     <div>
-      <CourseList/>
+      <CourseCard/>
     </div>
   )
 }

@@ -71,7 +71,7 @@ const CourseCard = ({ data }) => {
               </p>
               <p className='description'>Description: {item.description}</p>
               <p className='price'>Price: {item.price}</p>
-              <Link to={`${item.link}`}>
+              <Link to={`/moredetails/${item.id}`} className='more-info-link'>
                 <button className='more-info-button'>More Info</button>
               </Link>
             </div>

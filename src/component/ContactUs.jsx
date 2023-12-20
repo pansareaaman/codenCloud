@@ -38,16 +38,16 @@ const ContactUs = () => {
 
                 <form onSubmit={handleSubmit} className="row g-3 justify-content-center text-center">
                     <div className="col-md-3">
-                        <input type="text" className="form-control" name="fname" placeholder="Full Name" />
+                        <input type="text" className="form-control" name="fname" placeholder="Full Name" required/>
                     </div>
                     <div className="col-md-3">
-                        <input type="email" className="form-control" name="email" placeholder="E-mail" />
+                        <input type="email" className="form-control" name="email" placeholder="E-mail" required/>
                     </div>
                     <div className="col-md-4">
-                        <input type="number" className="form-control" name="contact" placeholder="Contact Number" />
+                        <input type="number" className="form-control" name="contact" placeholder="Contact Number" required/>
                     </div>
                     <div className="col-md-10">
-                        <input type="text" className="form-control" name="subject" placeholder="Subject" />
+                        <input type="text" className="form-control" name="subject" placeholder="Subject" required/>
                     </div>
                     <div className="col-md-10">
                         <textarea name="message" cols="30" rows="5" className="form-control" placeholder="Message" />

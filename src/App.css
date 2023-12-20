@@ -28,9 +28,6 @@ video {
   color: white;
 }
 
-
-
-
 .form-parent {
   width: 323px;
   height: auto;
@@ -68,7 +65,7 @@ video {
 }
 .contact-form-area {
   background: #222;
-  width: 245px;
+  width: 230px;
   padding: 10px 0px;
   border: 1px solid #111;
   box-shadow: 2px 2px 2px #111 inset;

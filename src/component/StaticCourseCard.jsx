@@ -15,7 +15,8 @@ export const StaticCourseCard = () => {
     <div class="card-body">
       <h5 class="card-title">React-Js</h5>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <Link to="/reactjs" class="btn btn-primary">More Details</Link>
+      
+      <Link to={`/moredetails/101`} class="btn btn-primary">More Details</Link>
     </div>
   </div>
   <div class="card">
@@ -24,10 +25,10 @@ export const StaticCourseCard = () => {
       <h5 class="card-title">C++</h5>
   
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <Link to="/cpp" class="btn btn-primary">More Details</Link>
+      <Link  to={`/moredetails/108`} class="btn btn-primary">More Details</Link>
     </div>
   </div>
-  <div class="card" style={{border:"none",boxShadow:"none"}}> 
+  <div class="card card-img-top" style={{border:"none",boxShadow:"none"}}> 
     <div class="card-body"  style={{display:"flex", alignItems:"center",justifyContent:"center",padding:"20px",}}>
  <a className="butt" href='/course'><FaArrowAltCircleRight size={50} /><p style={{fontSize:"30px"}}>ALL COURSES</p></a>
  

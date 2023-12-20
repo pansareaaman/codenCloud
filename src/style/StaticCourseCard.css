@@ -14,6 +14,7 @@
     padding-bottom: 70px;
     /* padding-top: 10px; */
     width: 65rem;
+    flex-wrap: wrap;
 
 
 }
@@ -30,4 +31,25 @@
     margin-top:20px;
     padding: 20px;
     
+}
+
+/* For smaller devices (up to 768px) */
+@media (max-width: 768px) {
+    .card-group {
+        margin-left: 20px; /* Adjust margins for smaller screens */
+        width: auto; /* Allow cards to adjust based on screen width */
+        padding-bottom: 40px; /* Reduce padding for smaller screens */
+    }
+
+    .custom-heading {
+        font-size: 2rem; /* Adjust heading font size for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* For larger devices (more than 1000px) */
+@media (min-width: 1000px) {
+    .headerImg {
+        margin-top: 50px;
+    }
 }

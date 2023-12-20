@@ -24,7 +24,7 @@
 } 
 
 .headerImg{
-    max-width: 50%;
+    max-width: 100%;
     
 }
 
@@ -86,13 +86,38 @@ img{
     align-items:center;
     justify-content:space-around;
     flex-wrap: wrap;
-    padding-top: 30px;
+    margin-top: 30px;
+    padding-top: 0px;
     padding-bottom: 30px;
   }
 
+  .headerImg{
+    
+  }
+  @media (max-width: 999px) {
+    .headerImg {
+      margin-top: 50px;
+      /* Additional styles for screens larger than 1000px */
+    }
+  }
 
-
-
+  @keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+      background-color: #49e819;
+      box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+  }
+  .gbutton {
+    animation: glowing 1300ms infinite;
+  }
 
 
 
