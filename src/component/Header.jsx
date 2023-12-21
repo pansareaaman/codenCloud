@@ -3,7 +3,7 @@ import HeaderImg from "../assets/headerImg.jpg";
 import { NavLink } from "react-router-dom";
 import "../style/Header.css";
 import Swal from "sweetalert2";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 export const Header = () => {
   const handleSubmit = (event) => {
@@ -127,7 +127,7 @@ export const Header = () => {
             </h1>
             <h3>
               Learn{" "}
-              <Typical
+              {/* <Typical
                 steps={[
                   "DSA",
                   1500,
@@ -144,7 +144,7 @@ export const Header = () => {
                 ]}
                 loop={Infinity}
                 wrapper="b"
-              />
+              /> */}
             </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
