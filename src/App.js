@@ -4,6 +4,8 @@ import {Footer} from './component/Footer'
 import { Route ,Routes } from 'react-router-dom';
 import  MoreDetails   from './component/MoreDetails';
 import CourseCard from './component/CourseCard'
+import Academic from './component/Academic';
+import Professional from './component/Professional';
 
 import C from './assets/c.jpg';
 import CPP from './assets/cpp.jpg';
@@ -34,8 +36,8 @@ function App() {
       course: 'Professional',
       link: '/reactjs',
       poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-      ylink1: '',
-      ylink2: ''
+      ylink1: 'https://www.youtube.com/embed/videoseries?si=uTUMBiFauMrYb7Oo&amp;list=PLrR3DUB3pznKGdEbgY2ajOA_1VovAqXWC',
+      ylink2: 'https://www.youtube.com/embed/Kcd_t_hdZso?si=bcpoyXhDA1vuCoYm'
     },
     {
       id: 102,
@@ -47,11 +49,11 @@ function App() {
       instructor: 'Umar Solanki',
       duration: 5,
       description: 'Frontend',
-      course: 'Professional',
+      course: 'Academic',
       link: '/css',
       poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-      ylink1: '',
-      ylink2: ''
+      ylink1: 'https://www.youtube.com/embed/videoseries?si=meIwmB_IJr-QDsAW&amp;list=PLrR3DUB3pznIMwdhDcPB0tl65XGFrHqw4',
+      ylink2: 'https://www.youtube.com/embed/qFhsQYTEEJ8?si=0uMo0ZsoaQDAKkpm'
     },    
       {
         id: 103,
@@ -63,11 +65,11 @@ function App() {
         instructor: 'Umar Solanki',
         duration: 5,
         description: 'Frontend',
-        course: 'Professional',
+        course: 'Academic',
         link: '/javascript',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=i5K2vx2jwnvHkLNh&amp;list=PLrR3DUB3pznIww-cBniFIFn6crsDSSaG4',
+        ylink2: 'https://www.youtube.com/embed/lb7D0abJAqs?si=fqhr8Xe5JTtntQLo'
       },
       {
         id: 104,
@@ -79,11 +81,11 @@ function App() {
         instructor: 'Umar Solanki',
         duration: 5,
         description: 'Backend',
-        course: 'Professional',
+        course: 'Academic',
         link: '/php',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=J8wor7l4r32vE79M&amp;list=PLrR3DUB3pznLpwIk4deQFEsH6t_bqMuVs',
+        ylink2: 'https://www.youtube.com/embed/MYPiJv7YDlk?si=meq3xIs5YM31CvBc'
       },
       {
         id: 105,
@@ -98,8 +100,8 @@ function App() {
         course: 'Professional',
         link: '/spring-boot',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=tiMAy0e35pQmd_Qy&amp;list=PLrR3DUB3pznJDozWqKWL9VIIx5cUhpOo2',
+        ylink2: 'https://www.youtube.com/embed/faa046GOd_E?si=KbimOymlqk65rcpO'
       },
       {
         id: 106,
@@ -111,11 +113,11 @@ function App() {
         instructor: 'Umar Solanki',
         duration: 5,
         description: 'Frontend',
-        course: 'Professional',
+        course: 'Academic',
         link: '/html',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=fyL_UAafHxu1GJhH&amp;list=PLrR3DUB3pznK8eBpSbaGdcCv5qrsGlzHM',
+        ylink2: 'https://www.youtube.com/embed/bAaYKuJpUg8?si=d17u41xxSj4URJKo'
       },
       {
         id: 107,
@@ -127,11 +129,11 @@ function App() {
         instructor: 'Umar Solanki',
         duration: 5,
         description: 'Backend',
-        course: 'Professional',
+        course: 'Academic',
         link: '/java',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=wO0u9FFPM14n2jdN&amp;list=PLrR3DUB3pznIUoeLv_p2IEW_ZJQiv2AZn',
+        ylink2: 'https://www.youtube.com/embed/1BBnL2lVcrs?si=fOMxsGmpfolIEfE9'
       },
       {
         id: 108,
@@ -143,11 +145,11 @@ function App() {
         instructor: 'Umar Solanki',
         duration: 5,
         description: 'Backend',
-        course: 'Professional',
+        course: 'Academic',
         link: '/c++',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=ucnlJSpNPshU__zo&amp;list=PLrR3DUB3pznLFM7KQBSgVEeTJXO1NwYbJ',
+        ylink2: 'https://www.youtube.com/embed/aXQzV9Dsec8?si=pfiYhVo0FXnxQ7t0'
       },
       {
         id: 109,
@@ -159,11 +161,11 @@ function App() {
         instructor: 'Umar Solanki',
         duration: 5,
         description: 'Backend',
-        course: 'Professional',
+        course: 'Academic',
         link: '/c',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=1yZvdUhXQxClxDho&amp;list=PLrR3DUB3pznKSaBTTr_WZbmw5TGJ1iDGp',
+        ylink2: 'https://www.youtube.com/embed/tD5XOM4rp7o?si=ZnkQbvbZEr1YCADi'
       },
       {
         id: 110,
@@ -194,22 +196,24 @@ function App() {
         course: 'Professional',
         link: '/python',
         poster: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40',
-        ylink1: '',
-        ylink2: ''
+        ylink1: 'https://www.youtube.com/embed/videoseries?si=RHRWr9p9h_H52N1K&amp;list=PLrR3DUB3pznKbkcgWZnZPULZSBGLbfpui',
+        ylink2: 'https://www.youtube.com/embed/ILHswlrSde0?si=8jZuEMwBi2jwEU42'
       }
       
 ];
 
 
-
+const head="Courses...";
 
   return (
     <div className="App">
         {/* <Navbar/>         */}
         <Routes>
           <Route path='/' element={<Home/>}></Route>
-          <Route path="/course" element={<CourseCard data={data} />} />
-          <Route path='/moredetails/:id' element={<MoreDetails data={data}/>}></Route>       
+          <Route path="/course" element={<CourseCard data={data} head={head}/>} />
+          <Route path='/moredetails/:id' element={<MoreDetails data={data}/>}></Route> 
+          <Route path="/academic" element={<Academic data={data} />} />   
+          <Route path="/professional" element={<Professional data={data} />} />      
         </Routes>
         <Footer/>
     </div>

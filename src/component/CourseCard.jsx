@@ -3,7 +3,7 @@ import ReactImage from '../assets/react.png';
 import '../style/CourseCard.css';
 import { Link } from 'react-router-dom';
 
-const CourseCard = ({ data }) => {
+const CourseCard = ({ data , head}) => {
   const [sortedData, setSortedData] = useState([...data]); // State to hold sorted data
   const [searchTerm, setSearchTerm] = useState(''); // State to hold search term
   const [filteredData, setFilteredData] = useState([...data]); // State to hold filtered data
@@ -19,7 +19,8 @@ const CourseCard = ({ data }) => {
       sortedResult.sort((a, b) => parseInt(a.price) - parseInt(b.price));
     } else if (sortCriteria === 'description') {
       sortedResult.sort((a, b) => a.description.localeCompare(b.description));
-    }
+    } 
+    
 
     setSortedData(sortedResult);
   };
@@ -60,6 +61,10 @@ const CourseCard = ({ data }) => {
           />
         </div>
       </header>
+      <div className="headClass">
+      <h1>{head}</h1>
+      </div>
+      
       <div className='course-card-container'>
         {filteredData.map((item, index) => (
           <div className='course-card' key={index}>
@@ -70,6 +75,7 @@ const CourseCard = ({ data }) => {
                 Instructor: <span className='instructor-name'>{item.instructor}</span>
               </p>
               <p className='description'>Description: {item.description}</p>
+              <p className='description'>Course Type: {item.course} </p>
               <p className='price'>Price: {item.price}</p>
               <Link to={`/moredetails/${item.id}`} className='more-info-link'>
                 <button className='more-info-button'>More Info</button>

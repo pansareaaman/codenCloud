@@ -13,19 +13,19 @@ export const StaticCourseCard = () => {
         <div class="card">
     <img src={REACT} class="card-img-top" alt="..." style={{ backgroundSize:'cover'}}/>
     <div class="card-body">
-      <h5 class="card-title">React-Js</h5>
+      <h5 class="card-title">Professional Cources</h5>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       
-      <Link to={`/moredetails/101`} class="btn btn-primary">More Details</Link>
+      <a href={`/professional`} class="btn btn-primary">More Details</a>
     </div>
   </div>
   <div class="card">
     <img src={image} class="card-img-top" alt="..." style={{ objectFit:'cover'}}/>
     <div class="card-body">
-      <h5 class="card-title">C++</h5>
+      <h5 class="card-title">Academic Cources</h5>
   
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <Link  to={`/moredetails/108`} class="btn btn-primary">More Details</Link>
+      <a  href={`/academic`} class="btn btn-primary">More Details</a>
     </div>
   </div>
   <div class="card card-img-top" style={{border:"none",boxShadow:"none"}}> 

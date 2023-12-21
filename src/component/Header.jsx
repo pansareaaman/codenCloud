@@ -59,6 +59,15 @@ export const Header = () => {
         </NavLink>
       </nav>
 
+      {/* <nav className="headerBox2">
+      <NavLink to={`/moredetails/101`} className="link">
+      <p>Academic Cources</p> 
+        </NavLink>
+        <NavLink to={`/moredetails/101`} className="link">
+        <p>Professional Cources</p>
+        </NavLink>
+      </nav> */}
+
       <div className="headerMain">
         <div className="headerInfo">
           <div className="form-parent">
@@ -105,7 +114,6 @@ export const Header = () => {
                 className="contact-form-button contact-form-button-submit"
                 id="ContactForm1_contact-form-submit" style={{backgroundColor:"#0766AD",color:"white",borderRadius:"10px",Size:"30px"}}
 
-                role="button"
               >
                 submit
               </button>
@@ -153,7 +161,7 @@ export const Header = () => {
                   className="email-input"
                   placeholder="Enter your email"
                 />
-                <button className="button-40" role="button">
+                <button className="button-40">
                   GET STARTED
                 </button>
               </form>

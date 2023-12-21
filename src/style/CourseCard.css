@@ -124,3 +124,8 @@
 .more-info-button:hover {
     background-color: #45a049;
 }
+
+.headClass{
+    text-align: center;
+    padding: 30px;
+}

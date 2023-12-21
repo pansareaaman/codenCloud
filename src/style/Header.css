@@ -5,11 +5,24 @@
 .headerBox{
     padding-top: 80px;
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+.headerBox2{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headerBox2 p{
+    font-size: 20px;
 }
 
 .headerInfo{
