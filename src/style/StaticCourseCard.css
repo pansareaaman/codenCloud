@@ -50,6 +50,22 @@
 /* For larger devices (more than 1000px) */
 @media (min-width: 1000px) {
     .headerImg {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    
+    .headerImg {
+        margin-top: 80px;
+    }
+
+    .card-group {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        padding-bottom: 40px;
+    }
+    
+
+  }

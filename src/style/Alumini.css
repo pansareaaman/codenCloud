@@ -1,5 +1,10 @@
 .alumini-box{
     /* background-color:#38419D; */
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
  }
  .main1 {
      width: 700px; 
@@ -65,3 +70,74 @@
      padding-top: 50px;
      color:rgb(23, 28, 155);
  }
+
+ @media screen and (max-width: 650px) {
+    
+
+  }
+
+  /* Default styles for the slideshow */
+.alumini-box {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    /* Add other styles for the container */
+  }
+  
+  .main1 {
+    /* Adjust container styles */
+  }
+  
+  .main2 {
+    /* Adjust container styles */
+  }
+  
+  /* Styles for the slider items */
+  .main3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    /* Styles for image container */
+  }
+  
+  .imagein {
+    /* Styles for the image */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .details {
+    /* Styles for the details */
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .alumini-box {
+      padding: 10px;
+    }
+    
+    .main1 {
+      width: 400px;
+    }
+    .details{
+      padding-top: 30;
+      margin-top: 0;
+    }
+    
+    /* Adjust other styles as needed for smaller screens */
+  }
+  
+  @media (max-width: 768px) {
+    .main3 {
+      /* Reduce height and adjust margins for smaller screens */
+      height: 450px;
+      margin-top: 20px;
+      margin-right: 0; /* Adjust margin-right to remove gap between cards */
+      margin-bottom: 40px; /* Adjust bottom margin as needed */
+    }
+}
