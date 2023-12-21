@@ -32,11 +32,11 @@ const MoreDetails = ({ data }) => {
       </div>
       <p><strong>Detailed Description:</strong>{courseDetails.long_description}</p>
       <div className='yvideo-container'>
-        <div className="yvideo1">
-        <iframe width="560" height="315" src={courseDetails.ylink1} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
+        <div className="yvideo">
+        <iframe  src={courseDetails.ylink1} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
         </div>
-        <div className="yvideo2">
-        <iframe width="560" height="315" src={courseDetails.ylink2} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+        <div className="yvideo">
+        <iframe  src={courseDetails.ylink2} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
       </div>
     </div>
   );

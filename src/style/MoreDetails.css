@@ -53,8 +53,36 @@
     flex-wrap: wrap;
   }
 
+  .yvideo{
+    width:560px; 
+    height:315px;
+      }
+   iframe{
+    width:560px; 
+    height:315px;
+    }
 
+  @media screen and (max-width: 650px) {
+    .details-container{
+      flex-direction: column;
+    }
+    iframe{
+      width:290px; 
+    height:180px;
+    }
+    .details-image {
+      margin-right: 0;
+    }
+    .yvideo{
+      width:560px; 
+      height:200px;
+        }
+    .inner-details-container {
 
+    }
+  }
+
+  
 
 
 
