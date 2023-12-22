@@ -39,6 +39,7 @@
         margin-left: 20px; /* Adjust margins for smaller screens */
         width: auto; /* Allow cards to adjust based on screen width */
         padding-bottom: 40px; /* Reduce padding for smaller screens */
+        margin-right: 21px;
     }
 
     .custom-heading {
@@ -50,11 +51,11 @@
 /* For larger devices (more than 1000px) */
 @media (min-width: 1000px) {
     .headerImg {
-        margin-top: 80px;
+        margin-top: 19px;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) and(min-width: 374px) {
     
     .headerImg {
         margin-top: 80px;
@@ -66,6 +67,12 @@
         width: auto;
         padding-bottom: 40px;
     }
+    .stCourse{
+        background-color: #385d84;
+        margin: 11px;
+    }
     
 
   }
+
+  

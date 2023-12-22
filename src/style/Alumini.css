@@ -131,8 +131,28 @@
     
     /* Adjust other styles as needed for smaller screens */
   }
+
+  @media screen and (min-width: 1024px) {
+    .main3 {
+      /* Reduce height and adjust margins for smaller screens */
+      /* height: 450px;
+      margin-top: 20px;
+      margin-right: 0; /* Adjust margin-right to remove gap between cards */
+      /* margin-bottom: 40px; Adjust bottom margin as needed  */
+    }
+}
+
+  @media screen and (min-width: 767px)and(max-width:1023) {
+    .main3 {
+      /* Reduce height and adjust margins for smaller screens */
+      /* height: 450px; */
+      /* margin-top: 20px; */
+      /* margin-right: 0; Adjust margin-right to remove gap between cards */
+      /* margin-bottom: 40px; Adjust bottom margin as needed */
+    }
+}
   
-  @media (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .main3 {
       /* Reduce height and adjust margins for smaller screens */
       height: 450px;

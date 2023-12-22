@@ -26,7 +26,7 @@
 }
 
 .headerInfo{
-    height: 300px;
+    height: 375px;
     width: 500px;
 }
 
@@ -101,16 +101,25 @@ img{
     flex-wrap: wrap;
     margin-top: 30px;
     padding-top: 0px;
+    margin-left: 20px;
     padding-bottom: 30px;
   }
 
-  .headerImg{
-    
-  }
+
   @media (max-width: 999px) {
     .headerImg {
       margin-top: 50px;
       /* Additional styles for screens larger than 1000px */
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .headerImg {
+      margin-top: 105px;
+      /* Additional styles for screens larger than 1000px */
+    }
+    .embut{
+      margin-left: 20px;
     }
   }
 
