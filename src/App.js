@@ -680,10 +680,11 @@ const head="Courses...";
 
   return (
     <div className="App">
-        {/* <Navbar/>         */}
+        <Navbar/>        
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path="/course" element={<CourseCard data={data} head={head}/>} />
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path="/courses" element={<CourseCard data={data} head={head}/>} />
           <Route path='/moredetails/:id' element={<MoreDetails data={data}/>}></Route> 
           <Route path="/academic" element={<Academic data={data} />} />   
           <Route path="/professional" element={<Professional data={data} />} />      

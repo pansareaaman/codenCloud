@@ -65,7 +65,7 @@ export const Header = () => {
         </NavLink>
         <NavLink to={`/moredetails/101`} className="link">
         <p>Professional Cources</p>
-        </NavLink>
+        </NavLink>  
       </nav> */}
 
       <div className="headerMain">

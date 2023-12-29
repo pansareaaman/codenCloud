@@ -1,44 +1,41 @@
-import React from "react";
-import headerImg from "../assets/headerImg.jpg";
-import "../style/Alumini.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../style/Alumini.css'
 
-export default function AlumniCard({ data }) {
+const AlumniCard = ({ data }) => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplaySpeed: 3000,
     autoplay: true,
   };
-  //console.log(data);
+
   return (
-    <>
-      <div className="alumini-box">
-        <h1 className="alumni">Alumni</h1>
-        <div className="main1">
-          <div className="main2">
-            <Slider {...settings}>
-              {data?.map((item, index) => (
-                <div key={item.id} className="main3">
-                  <div className="image">
-                    <img src={headerImg} alt="movieImage" className="imagein" />
-                  </div>
-                  <div className="details">
-                    <h1 className="name">{item.sname}</h1>
-                    <p>{item.cname}</p>
-                    <p>{item.mssg}</p>
-                  </div>
-                </div>
-              ))}
-            </Slider>
+    <div className=''>
+        <div>
+            <h1 className='alumni-heading'>Alumni</h1>
+        </div>
+    <Slider {...settings}>
+      {data?.map((item) => (
+        <div key={item.id} className="alumni-card">
+          <div>
+            <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt=""  />
+          </div>
+          <div className="alumni-card-content">
+            <h2>{item.sname}</h2>
+            <p className='alumni-course-name'>{item.cname}</p>
+            <p>{item.mssg}</p>
           </div>
         </div>
-      </div>
-    </>
+      ))}
+    </Slider>
+    </div>
   );
 }
+
+export default AlumniCard;

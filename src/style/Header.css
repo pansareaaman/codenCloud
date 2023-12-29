@@ -28,11 +28,13 @@
 .headerInfo{
     height: 375px;
     width: 500px;
+    
 }
 
 .headerInfo p{
     font-size: 18px;
     line-height: 25px;
+    color: black;
 
 } 
 
@@ -141,5 +143,10 @@ img{
     animation: glowing 1300ms infinite;
   }
 
+
+
+
+
+  
 
 

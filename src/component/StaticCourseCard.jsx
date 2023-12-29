@@ -30,7 +30,7 @@ export const StaticCourseCard = () => {
   </div>
   <div class="card card-img-top" style={{border:"none",boxShadow:"none"}}> 
     <div class="card-body"  style={{display:"flex", alignItems:"center",justifyContent:"center",padding:"20px",}}>
- <a className="butt" href='/course'><FaArrowAltCircleRight size={50} /><p style={{fontSize:"30px"}}>ALL COURSES</p></a>
+ <a className="butt" href='/courses'><FaArrowAltCircleRight size={50} /><p style={{fontSize:"30px"}}>ALL COURSES</p></a>
  
     </div>
    
