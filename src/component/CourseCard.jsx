@@ -88,9 +88,9 @@ const CourseCard = ({ data, head }) => {
               <p className={`${styles["card__description"]} ${styles["custom_p"]}` } style={{fontSize:'bold' }}>
                 Price: {item.price}
               </p>
-              <Link to={`/moredetails/${item.id}`} className={styles["more-info-link"]}>
+              <a href={`/moredetails/${item.id}`} className={styles["more-info-link"]}>
                 <button className={styles["card__button"]}>Read more</button>
-              </Link>
+              </a>
             </div>
           </article>
         ))}
