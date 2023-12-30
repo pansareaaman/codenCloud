@@ -30,33 +30,33 @@ export const Header = () => {
   return (
     <div>
       <nav className="headerBox">
-        <NavLink to={`/moredetails/106`} className="link">
+        <a href={`/moredetails/106`} className="link">
           HTML
-        </NavLink>
-        <NavLink to={`/moredetails/102`} className="link">
+        </a>
+        <a href={`/moredetails/102`} className="link">
           CSS
-        </NavLink>
-        <NavLink to={`/moredetails/103`} className="link">
+        </a>
+        <a href={`/moredetails/103`} className="link">
           JS
-        </NavLink>
-        <NavLink to={`/moredetails/109`} className="link">
+        </a>
+        <a href={`/moredetails/109`} className="link">
           C
-        </NavLink>
-        <NavLink to={`/moredetails/108`} className="link">
+        </a>
+        <a href={`/moredetails/108`} className="link">
           C++
-        </NavLink>
-        <NavLink to={`/moredetails/107`} className="link">
+        </a>
+        <a href={`/moredetails/107`} className="link">
           Java
-        </NavLink>
-        <NavLink to={`/moredetails/111`} className="link">
+        </a>
+        <a href={`/moredetails/111`} className="link">
           Python
-        </NavLink>
-        <NavLink to={`/moredetails/104`} className="link">
+        </a>
+        <a href={`/moredetails/104`} className="link">
           PHP
-        </NavLink>
-        <NavLink to={`/moredetails/101`} className="link">
+        </a>
+        <a href={`/moredetails/101`} className="link">
           React Js
-        </NavLink>
+        </a>
       </nav>
 
       {/* <nav className="headerBox2">

@@ -35,7 +35,7 @@ const Navbar = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor:'black', height:'100%', marginBottom:'35px' }}>
       <Typography variant="h6" sx={{ my: 2, color: 'white' }}>
-      COEN N CLOUD
+      CODE N CLOUD
       </Typography>
       <Divider />
       <List>
@@ -84,7 +84,7 @@ const Navbar = () => {
               color: '#fff',
             }}
           >
-            COEN N CLOUD
+            CODE N CLOUD
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
