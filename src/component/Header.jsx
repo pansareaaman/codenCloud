@@ -63,9 +63,9 @@ export const Header = () => {
         <div className="headerInfo">
           <div className="form-parent">
             <form
-              className="form"
+              className="form cc-float-form"
               name="contact-form"
-              className="cc-float-form"
+              
               onSubmit={handleSubmit}
             >
               <h2 style={{ color: "black" }}>CONTACT US</h2>
