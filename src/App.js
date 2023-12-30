@@ -8,6 +8,7 @@ import Academic from './component/Academic';
 import Professional from './component/Professional';
 import Navbar from './component/Navbar';
 import ContactUs from './component/ContactUs';
+import { useState } from 'react';
 
 import IMAGES from './component/Images'
 import C from './assets/c.jpg';
@@ -41,6 +42,15 @@ import OS from './assets/OS.jpg';
 
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
 
 
   const data=[
@@ -680,6 +690,7 @@ function App() {
 const head="Courses...";
 
   return (
+    !loading && (
     <div className="App">
         <Navbar/>        
         <Routes>
@@ -694,6 +705,7 @@ const head="Courses...";
         </Routes>
         <Footer/>
     </div>
+  )
   );
 }
 

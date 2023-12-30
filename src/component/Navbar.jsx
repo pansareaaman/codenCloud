@@ -14,7 +14,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import LOGO from '../assets/codencloud.jpg'
 import WhatsappIcon from '../assets/WhatsappIcon.png'
 
 import { Height } from '@mui/icons-material';
