@@ -3,7 +3,7 @@ import HeaderImg from "../assets/headerImg.jpg";
 import { NavLink } from "react-router-dom";
 import "../style/Header.css";
 import Swal from "sweetalert2";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 export const Header = () => {
   const handleSubmit = (event) => {
@@ -114,7 +114,7 @@ export const Header = () => {
             </h1>
             <h3>
               Learn{" "}
-              {
+              {/* {
                 <Typical
                   steps={[
                     "DSA",
@@ -133,7 +133,7 @@ export const Header = () => {
                   loop={Infinity}
                   wrapper="b"
                 />
-              }
+              } */}
             </h3>
             <p>
               CodenCloud is a leading IT coaching institute that provides
