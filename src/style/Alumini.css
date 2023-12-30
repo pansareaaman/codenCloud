@@ -27,7 +27,8 @@ body {
   position: relative;
   color: var(--color-primary-white);
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-  margin-left: 30px;
+  margin-left: 35px;
+  width: 300px;
 }
 
 .alumni-card img {
@@ -97,3 +98,23 @@ body {
   vertical-align: middle;
 }
 
+
+.alumni-container{
+  display: flex;
+  align-items: center;
+}
+
+
+.alumni-container .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Or directly apply to the card container */
+.trying {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Other necessary styles */
+}

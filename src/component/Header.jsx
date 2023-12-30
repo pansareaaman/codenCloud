@@ -3,7 +3,7 @@ import HeaderImg from "../assets/headerImg.jpg";
 import { NavLink } from "react-router-dom";
 import "../style/Header.css";
 import Swal from "sweetalert2";
-// import Typical from "react-typical";
+import Typical from "react-typical";
 
 export const Header = () => {
   const handleSubmit = (event) => {
@@ -59,65 +59,52 @@ export const Header = () => {
         </a>
       </nav>
 
-      {/* <nav className="headerBox2">
-      <NavLink to={`/moredetails/101`} className="link">
-      <p>Academic Cources</p> 
-        </NavLink>
-        <NavLink to={`/moredetails/101`} className="link">
-        <p>Professional Cources</p>
-        </NavLink>  
-      </nav> */}
-
-      <div className="headerMain">
+          <div className="headerMain">
         <div className="headerInfo">
           <div className="form-parent">
             <form
+              className="form"
               name="contact-form"
               className="cc-float-form"
               onSubmit={handleSubmit}
             >
-              <p></p>
+              <h2 style={{ color: "black" }}>CONTACT US</h2>
+              <h5 style={{ color: "black" }}>
+                Book a <span style={{ color: "red" }}>FREE</span> live class
+              </h5>
+              <p style={{ color: "black" }}></p>
               Name:
-              <br />
-              <input
-                type="text"
-                className="contact-form-area"
-                id="ContactForm1_contact-form-name"
-                name="name"
-                size="30"
-                required
-              />
-              <p></p>
+              <p type="Name:">
+                <input placeholder="Enter your name " required></input>
+              </p>
               Email:
-              <span style={{ color: "red" }}>*</span>
-              <br />
-              <input
-                className="contact-form-area"
-                id="ContactForm1_contact-form-email"
-                name="email"
-                size="30"
-                type="email"
-                required
-              />
-              <p></p>
-              Message: <span style={{ color: "red" }}>*</span>
-              <br />
-              <textarea
-                className="contact-form-area"
-                id="ContactForm1_contact-form-email-message"
-                name="email-message"
-                cols="25"
-                rows="5"
-              ></textarea>
-              <p></p>
+              <p type="Email:">
+                <input
+                  placeholder="Enter your email"
+                  type="email"
+                  required
+                ></input>
+              </p>
+              Contact No:
+              <p type="Contact No:">
+                <input placeholder="Enter your number" required></input>
+              </p>
+              Message:
+              <p type="Message:">
+                <input placeholder="Enter your msg" required></input>
+              </p>
               <button
-                className="contact-form-button contact-form-button-submit"
-                id="ContactForm1_contact-form-submit" style={{backgroundColor:"#0766AD",color:"white",borderRadius:"10px",Size:"30px"}}
-
+                className="btn"
+                style={{
+                  backgroundColor: "",
+                  marginLeft: "13px",
+                  fontWeight: "bold",
+                  padding: "4px",
+                  borderRadius: "4px",
+                }}
               >
-                submit
+                Book Live Class{" "}
               </button>
-              <p></p>
             </form>
           </div>
 
@@ -127,33 +114,35 @@ export const Header = () => {
             </h1>
             <h3>
               Learn{" "}
-              {/* <Typical
-                steps={[
-                  "DSA",
-                  1500,
-                  "React-JS",
-                  1500,
-                  "Node-Js",
-                  1500,
-                  "C++",
-                  1500,
-                  "SQL",
-                  1500,
-                  "Java",
-                  1500,
-                ]}
-                loop={Infinity}
-                wrapper="b"
-              /> */}
+              {
+                <Typical
+                  steps={[
+                    "DSA",
+                    1500,
+                    "React-JS",
+                    1500,
+                    "Node-Js",
+                    1500,
+                    "C++",
+                    1500,
+                    "SQL",
+                    1500,
+                    "Java",
+                    1500,
+                  ]}
+                  loop={Infinity}
+                  wrapper="b"
+                />
+              }
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptates velit aliquam mollitia sit. Labore blanditiis nesciunt
-              dolorum perspiciatis esse molestiae sint fugiat dolor atque.
-              Ratione animi tempora ipsa delectus at veritatis minima. Rerum non
-              voluptatum quo laudantium nostrum consequatur a, quaerat incidunt,
-              fugit beatae corporis consequuntur delectus deserunt, iure
-              impedit?
+              CodenCloud is a leading IT coaching institute that provides
+              comprehensive and industry-relevant training to individuals
+              aspiring to build a successful career in the field of Information
+              Technology. With a commitment to excellence, CodenCloud offers a
+              diverse range of courses and coaching programs designed to empower
+              students with the skills and knowledge required in today's dynamic
+              IT landscape.
               <p>Your Email</p>
               <form>
                 <input
@@ -161,16 +150,14 @@ export const Header = () => {
                   className="email-input"
                   placeholder="Enter your email"
                 />
-                <button className="button-40">
-                  GET STARTED
-                </button>
+                <button className="button-40">GET STARTED</button>
               </form>
             </p>
           </div>
         </div>
 
         <div className="headerImg">
-          <img src={HeaderImg} alt="" className="headerImg"/>
+          <img src={HeaderImg} alt="" className="headerImg" />
         </div>
       </div>
     </div>

@@ -15,6 +15,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import LOGO from '../assets/codencloud.jpg'
+import WhatsappIcon from '../assets/WhatsappIcon.png'
+
 import { Height } from '@mui/icons-material';
 
 const navItems = ['Home', 'About', 'Contact','Courses'];
@@ -54,6 +56,7 @@ const Navbar = () => {
   );
 
   return (
+    <>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
@@ -112,6 +115,13 @@ const Navbar = () => {
         </Drawer>
       </nav>
     </Box>
+    <div class="whatsapp-container">
+    <a href="https://wa.me/8237307229" target="_blank">
+        <img src={WhatsappIcon} alt="WhatsApp" class="whatsapp-icon" />
+    </a>
+</div>
+
+    </>
   );
 };
 

@@ -7,6 +7,7 @@ import CourseCard from './component/CourseCard'
 import Academic from './component/Academic';
 import Professional from './component/Professional';
 import Navbar from './component/Navbar';
+import ContactUs from './component/ContactUs';
 
 import IMAGES from './component/Images'
 import C from './assets/c.jpg';
@@ -687,7 +688,9 @@ const head="Courses...";
           <Route path="/courses" element={<CourseCard data={data} head={head}/>} />
           <Route path='/moredetails/:id' element={<MoreDetails data={data}/>}></Route> 
           <Route path="/academic" element={<Academic data={data} />} />   
-          <Route path="/professional" element={<Professional data={data} />} />      
+          <Route path="/professional" element={<Professional data={data} />} /> 
+          <Route path="/contact" element={<ContactUs/>} />    
+             
         </Routes>
         <Footer/>
     </div>
