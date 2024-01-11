@@ -4,6 +4,7 @@ import {Video} from'./Video'
 import ContactUs from'./ContactUs'
 import {StaticCourseCard} from'./StaticCourseCard'
 import Alumini from './Alumini'
+// import DemoCard from './DemoCard'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Header/>    
       <StaticCourseCard/>     
       <Alumini />  
+
       <ContactUs/>
     </div>
   )
