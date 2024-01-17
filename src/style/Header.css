@@ -135,6 +135,8 @@ width: auto;
   }
 }
 
+
+
 @keyframes glowing {
   0% {
     background-color: #2ba805;
@@ -336,5 +338,24 @@ border-bottom: 2px solid #bebed2;
 
   100% {
     background-position: right bottom;
+  }
+}
+
+
+@media screen and (max-width: 405px) {
+  .nformcontainer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 404px) {
+  .nformcontainer {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 359px) {
+  .nformcontainer {
+    margin-top: 200px;
   }
 }
