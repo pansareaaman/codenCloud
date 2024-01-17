@@ -36,7 +36,7 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="row g-3 justify-content-center text-center">
+                <form className="row g-3 justify-content-center text-center" action="https://getform.io/f/fa8acebd-6765-4da1-a8c9-276cfc5beb42" method="POST" >
                     <div className="col-md-3">
                         <input type="text" className="form-control" name="fname" placeholder="Full Name" required/>
                     </div>

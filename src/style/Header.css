@@ -34,7 +34,7 @@
 .headerInfo p{
   font-size: 18px;
   line-height: 25px;
-  color: black;
+  color: white  ;
 
 } 
 
@@ -96,6 +96,13 @@ width: auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on focus */
 }
 
+.headerWrapper{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c562.173C126.835%2c564.823%2c258.966%2c636.239%2c372.474%2c579.581C487.678%2c522.077%2c532.907%2c384.904%2c588.145%2c268.597C644.163%2c150.65%2c730.858%2c25.658%2c695.211%2c-99.956C659.67%2c-225.196%2c502.58%2c-263.621%2c410.884%2c-356.033C327.465%2c-440.103%2c295.189%2c-584.952%2c181.396%2c-617.779C67.604%2c-650.606%2c-43.785%2c-566.062%2c-152.24%2c-518.483C-247.578%2c-476.658%2c-334.186%2c-426.071%2c-412.35%2c-357.303C-501.286%2c-279.058%2c-612.786%2c-207.515%2c-637.402%2c-91.645C-662.297%2c25.538%2c-587.012%2c136.445%2c-540.717%2c246.937C-492.878%2c361.114%2c-469.548%2c501.871%2c-362.602%2c564.22C-256.024%2c626.355%2c-123.341%2c559.596%2c0%2c562.173' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 982.178C1518.648 981.283 1592.257 940.982 1651.862 889.664 1706.795 842.369 1738.094 775.293 1760.403 706.323 1780.8029999999999 643.255 1782.01 577.777 1774.028 511.974 1765.891 444.894 1757.6689999999999 374.145 1713.866 322.69399999999996 1669.917 271.071 1598.601 258.937 1536.146 232.558 1464.885 202.45999999999998 1397.558 141.98700000000002 1321.683 157.05 1245.2640000000001 172.221 1199.144 248.286 1150.473 309.123 1103.507 367.828 1043.376 428.00800000000004 1044.774 503.175 1046.149 577.113 1126.6 621.828 1157.536 688.9970000000001 1188.324 755.845 1173.953 841.521 1225.016 894.5219999999999 1279.82 951.406 1361.016 983.077 1440 982.178' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.headerBox a{
+  color: #FFFFFF;
+}
 .embut{
   display: flex;
   align-items:center;
@@ -105,6 +112,9 @@ width: auto;
   padding-top: 0px;
   margin-left: 20px;
   padding-bottom: 30px;
+}
+.embut h1 ,h3{
+  color: #FFFFFF;
 }
 
 
@@ -211,4 +221,120 @@ border-bottom: 2px solid #bebed2;
     height: auto;
     border-radius: 50%;
     cursor: pointer;
+}
+
+
+.nformcontainer{
+  background: white;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.inner-nformcontainer p{
+  margin: unset;
+  text-align: start;
+  color: #61738e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  width: 100%;
+}
+
+.radiop{
+    color: #61738e;
+    font-size: 1.4rem;
+    margin-top: -2.4rem;
+}
+
+.radio-bar__text {
+  color: #61738e;
+  font-size: 1.0rem;
+  margin-top: 1.6rem;
+}
+
+.form-field__radio-important {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.16rem;
+  color: #a42137;
+}
+
+.landing-auth-form-radio-group{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  
+  
+}
+
+.landing-auth-form .sr-select__option {
+  z-index: 9999;
+  color: #364764;
+}
+
+
+/* .inner-nformcontainer{
+  margin: 15px;
+} */
+
+.beautiful-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+ /* Gradient background */
+  color: white;
+ /* White text color */
+  font-family: "Segoe UI", sans-serif;
+ /* Stylish and legible font */
+  font-weight: bold;
+  font-size: 18px;
+ /* Large font size */
+  border: none;
+ /* No border */
+  border-radius: 30px;
+ /* Rounded corners */
+  padding: 14px 28px;
+ /* Large padding */
+  cursor: pointer;
+ /* Cursor on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ /* Subtle shadow */
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+ /* Smooth transition */
+}
+
+/* Hover animation */
+.beautiful-button:hover {
+  background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+
+/* Click animation */
+.beautiful-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Shimmer animation */
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* Particle animation */
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
 }

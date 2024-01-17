@@ -700,7 +700,7 @@ const head="Courses...";
           <Route path='/moredetails/:id' element={<MoreDetails data={data}/>}></Route> 
           <Route path="/academic" element={<Academic data={data} />} />   
           <Route path="/professional" element={<Professional data={data} />} /> 
-          <Route path="/contact" element={<ContactUs/>} />    
+          <Route path="/contact" element={<ContactUs/>} />      
              
         </Routes>
         <Footer/>
