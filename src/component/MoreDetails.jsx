@@ -30,7 +30,7 @@ const MoreDetails = ({ data }) => {
           <p><strong>Course Type:</strong> {courseDetails.course}</p>
         </div>
       </div>
-      <p><strong>Detailed Description:</strong>{courseDetails.long_description}</p>
+      <p className='inner-details-container-p'><strong>Detailed Description:</strong>{courseDetails.long_description}</p>
       <div className='yvideo-container'>
         <div className="yvideo">
         <iframe  src={courseDetails.ylink1} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
