@@ -36,24 +36,24 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                <form className="row g-3 justify-content-center text-center" action="https://getform.io/f/fa8acebd-6765-4da1-a8c9-276cfc5beb42" method="POST" >
+                <form className="row g-3 justify-content-center text-center" action="https://getform.io/f/355929a5-a12a-4741-a621-dbd9946412e9" method="POST" >
                     <div className="col-md-3">
-                        <input type="text" className="form-control" name="fname" placeholder="Full Name" required/>
+                        <input type="text" className="form-control" name="NAME" placeholder="Full Name" required/>
                     </div>
                     <div className="col-md-3">
-                        <input type="email" className="form-control" name="email" placeholder="E-mail" required/>
+                        <input type="email" className="form-control" name="EMAIL" placeholder="E-mail" required/>
                     </div>
                     <div className="col-md-4">
-                        <input type="number" className="form-control" name="contact" placeholder="Contact Number" required/>
+                        <input type="number" className="form-control" name="NUMBER" placeholder="Contact Number" required/>
                     </div>
                     <div className="col-md-10">
-                        <input type="text" className="form-control" name="subject" placeholder="Subject" required/>
+                        <input type="text" className="form-control" name="SUBJECT" placeholder="Subject" required/>
                     </div>
                     <div className="col-md-10">
-                        <textarea name="message" cols="30" rows="5" className="form-control" placeholder="Message" />
+                        <textarea name="MESSAGE" cols="30" rows="5" className="form-control" placeholder="Message" />
                     </div>
                     <div className="col-md-10 d-grid gap-2">
-                        <button type="submit" className="btn btn-primary">Contact</button>
+                        <button type="submit" className="btn btn-primary" id="contactUs">Contact</button>
                     </div>
                 </form>
             </div>
